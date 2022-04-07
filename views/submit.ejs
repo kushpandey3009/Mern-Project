@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">Security is important!</h1>
+    <p class="secret-text">Please check your mails for OTP.</p>
+
+    <form action="/submit" method="POST">
+      <div class="form-group">
+        <input type="number" class="form-control text-center" name="number" placeholder="What's your OTP?">
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+  </div>
+</div>
+<%- include('partials/footer') %>
